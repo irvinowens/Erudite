@@ -5,9 +5,9 @@ Gem::Specification.new do |s|
   s.name        = "Erudite"
   s.version     = Erudite::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = []
-  s.email       = []
-  s.homepage    = "http://rubygems.org/gems/Erudite"
+  s.authors     = [ "Irvin Owens Jr" ]
+  s.email       = [ "irvin@owensperformance.com" ]
+  s.homepage    = "http://eruditedb.tumblr.com"
   s.summary     = "TODO: Write a gem summary"
   s.description = "TODO: Write a gem description"
 
