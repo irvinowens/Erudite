@@ -1,0 +1,3 @@
+module Erudite
+  # Your code goes here...
+end
