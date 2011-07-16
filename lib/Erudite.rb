@@ -1,5 +1,5 @@
-require 'Erudite/discovery.rb'
-require 'Erudite/distribute.rb'
+require File.dirname(__FILE__) + '/Erudite/discovery.rb'
+require File.dirname(__FILE__) + '/Erudite/distribute.rb'
 
 # The erudite gem is a runtime that provides a data store which
 # features automatic clustering, a sql interface on port 3306,
@@ -9,6 +9,6 @@ require 'Erudite/distribute.rb'
 module Erudite
   # Your code goes here...
   include Disco
-  
+  discovery = Cluster.new
   
 end
