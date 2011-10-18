@@ -21,6 +21,7 @@ module Disco
 						if ip_addr.ipv4_loopback? == false
 							if ip_addr.ipv4_private? == true
 								puts "private address #{ip_addr.ip_address}"
+								check_range_for_ip_address ip_addr
 							end
 						end
 					end
