@@ -6,12 +6,12 @@ require 'Erudite/version'
 Gem::Specification.new do |spec|
   spec.name          = "Erudite"
   spec.version       = Erudite::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+  spec.authors       = ["Irvin Owens Jr"]
+  spec.email         = ["0x8badbeef@sigsegv.us"]
+  spec.summary       = %q{Erudite is a ruby nosql DB}
+  spec.description   = %q{}
+  spec.homepage      = "http://erditedb.tumblr.com"
+  spec.license       = "GPLv3"
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
