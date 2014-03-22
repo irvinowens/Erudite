@@ -1,6 +1,23 @@
 # Erudite
 
-TODO: Write a gem description
+Erudite Ruby Distributed Database
+I decided to write erudite because I was fascinated by Erlang’s EPMD
+communications daemon.  I was thinking of a new open source project to work on,
+and it seemed like a good idea to build a ragged right edge database that would
+auto-shard, auto-migrate and auto-cluster.  I also needed for it to listen for
+MySQL traffic and have a DSL for SQL which Ruby helps with.
+
+I chose to write it in Ruby because I felt that Ruby’s dynamic nature would
+make it easier to work with.
+
+Features
+
+    -Auto sharding
+    -Auto data migration based on capacity and usage
+    -Partial file storage
+    -Self-healing 
+    -Eventual Consistency
+    -Auto-Discovery of new processes
 
 ## Installation
 
