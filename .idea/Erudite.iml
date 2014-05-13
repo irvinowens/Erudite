@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="gem" name="Ruby Gem">
+      <configuration>
+        <option name="GEM_APP_ROOT_PATH" value="$MODULE_DIR$" />
+        <option name="GEM_APP_TEST_PATH" value="" />
+        <option name="GEM_APP_LIB_PATH" value="$MODULE_DIR$/lib" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Erudite (v0.0.1, C:/Users/irvin_000/OneDrive/Documents/Erudite) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib" />
+          <root url="file://$MODULE_DIR$/.idea" />
+          <root url="file://$MODULE_DIR$/Erudite.bbprojectd" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/lib" />
+          <root url="file://$MODULE_DIR$/.idea" />
+          <root url="file://$MODULE_DIR$/Erudite.bbprojectd" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.6.2, ruby-2.0.0-p451) [gem]" level="application" />
+  </component>
+</module>
+

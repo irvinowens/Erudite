@@ -1,0 +1,15 @@
+PATH
+  remote: .
+  specs:
+    Erudite (0.0.1)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  Erudite!
+  bundler (>= 1.0.0)
