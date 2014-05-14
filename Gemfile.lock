@@ -1,15 +1,21 @@
 PATH
   remote: .
   specs:
-    Erudite (0.0.1)
+    Erudite (0.0.1pre)
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
+    eventmachine (1.0.3)
+    minitest (4.3.2)
+    rake (0.9.6)
 
 PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
   Erudite!
-  bundler (>= 1.0.0)
+  bundler (~> 1.5)
+  eventmachine
+  minitest
+  rake

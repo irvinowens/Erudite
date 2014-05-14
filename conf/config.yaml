@@ -1,0 +1,26 @@
+# Erudite configuration file
+---
+# logging level
+logging:
+  level: "DEBUG"
+  file: "../log/erudite.log"
+# data folders
+data_folders: [
+  "/var/erudite/data/db/",
+  "/var/erudite/backup/db/"
+]
+# client to server
+client_to_server:
+  # client listen interface
+  interface: 0.0.0.0
+  # listen port
+  port: 17777
+server_to_server:
+  servers: [
+    127.0.0.1
+  ]
+  # server listen interface
+  s2s_interface: 0.0.0.0
+  # s2s listen port
+  s2s_port: 17778
+...
