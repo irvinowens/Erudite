@@ -12,17 +12,25 @@ require "yaml"
 class FileSystem
   attr_accessor :logger, :config
   def initialize
-    @config = YAML.load_file(File.expand_path('../conf/config.yaml'))
-    if File.exist?(@config["logging"]["file"])
-      # skip, file exists
-    else
-      FileUtils.mkpath(File.dirname(File.expand_path(@config["logging"]["file"])))
-      File.open(@config["logging"]["file"],"w+") { |f| f.write("Opening Logfile\n")}
-    end
-    @logger = Logger.new(File.expand_path(@config["logging"]["file"]), 'daily')
-    @logger.level = Logger.const_get @config["logging"]["level"]
-    @logger.progname = 'FileSystem'
+    @config = EruditeConfig.get_config
+    @logger = FileSystem.init_logger(pname:'FileSystem',conf:@config)
     @logger.debug "Config: #{@config}"
     @logger.info "Filesystem Initialization Complete"
+  end
+
+  # Initialize the logger with a config and a pname
+
+  def self.init_logger(pname: 'erudite', conf:nil)
+    config = conf || ArgumentError.throw('Conf must have a value')
+    if File.exist?(config["logging"]["file"])
+      # skip, file exists
+    else
+      FileUtils.mkpath(File.dirname(File.expand_path(config["logging"]["file"])))
+      File.open(config["logging"]["file"],"w+") { |f| f.write("Opening Logfile\n")}
+    end
+    logger = Logger.new(File.expand_path(config["logging"]["file"]), 'daily')
+    logger.level = Logger.const_get config["logging"]["level"]
+    logger.progname = pname
+    return logger
   end
 end
