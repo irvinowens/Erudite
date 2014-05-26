@@ -8,6 +8,7 @@ GEM
   specs:
     eventmachine (1.0.3)
     minitest (4.3.2)
+    murmurhash3 (0.1.4)
     rake (0.9.6)
 
 PLATFORMS
@@ -18,4 +19,5 @@ DEPENDENCIES
   bundler (~> 1.5)
   eventmachine
   minitest
+  murmurhash3
   rake

@@ -6,15 +6,17 @@ logging:
   file: "../log/erudite.log"
 # data folders
 data_folders: [
-  "/var/erudite/data/db/",
-  "/var/erudite/backup/db/"
+  "var/erudite/data/db/"
+]
+backup_folders: [
+  "var/erudite/backup/"
 ]
 # client to server
 client_to_server:
   # client listen interface
   interface: 0.0.0.0
   # listen port
-  port: 17777
+  port: 17767
 server_to_server:
   servers: [
     127.0.0.1
@@ -22,5 +24,5 @@ server_to_server:
   # server listen interface
   s2s_interface: 0.0.0.0
   # s2s listen port
-  s2s_port: 17778
+  s2s_port: 17768
 ...
