@@ -15,8 +15,7 @@ Features
     -Auto sharding
     -Auto data migration based on capacity and usage
     -Partial file storage
-    -Self-healing 
-    -Eventual Consistency
+    -Self-healing
     -Auto-Discovery of new processes
 
 ## Installation

@@ -18,7 +18,7 @@ class FileSystemTest < MiniTest::Unit::TestCase
   def test_create_keyspace_folder
     ks_name = "maximillian"
     @filesystem.create_keyspace_dir ks_name
-    assert(File.exist?(@filesystem.config["data_folders"][0] + "/" + MurmurHash3::PureRuby128::murmur3_128_str_hexdigest(ks_name)))
+    assert(File.exist?(@filesystem.config["data_folders"][0] + "/" + MurmurHash3::Native128::murmur3_128_str_hexdigest(ks_name)))
   end
 
   def test_create_toc_file

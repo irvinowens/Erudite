@@ -20,7 +20,7 @@
 
 require "logger"
 require "yaml"
-require "murmurhash3/pure_ruby"
+require "murmurhash3"
 
 class FileSystem
   attr_accessor :logger, :config
@@ -51,7 +51,7 @@ class FileSystem
   def create_keyspace_dir ks_name
     # create keyspace folder under each data folder
     @config["data_folders"].each do |data_folder|
-      FileUtils.mkpath(File.expand_path(data_folder) + "/" + MurmurHash3::PureRuby128::murmur3_128_str_hexdigest(ks_name));
+      FileUtils.mkpath(File.expand_path(data_folder) + "/" + MurmurHash3::Native128::murmur3_128_str_hexdigest(ks_name));
     end
   end
 
@@ -59,7 +59,7 @@ class FileSystem
 
   def create_new_toc_file(keyspace:nil)
     ks = keyspace || ArgumentError.throw("Keyspace can not be nil")
-    ks =  MurmurHash3::PureRuby128::murmur3_128_str_hexdigest(ks)
+    ks =  MurmurHash3::Native128::murmur3_128_str_hexdigest(ks)
     toc_fn = SecureRandom.uuid() + ".toc"
     @config["data_folders"].each do |data_folder|
       File.open(File.expand_path(data_folder) + "/" + ks + "/" + toc_fn, 'w+') {

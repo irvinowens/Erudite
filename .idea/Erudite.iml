@@ -47,16 +47,21 @@
       <library name="Erudite (v0.0.1pre, C:/Users/irvin_000/OneDrive/Documents/Erudite) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/lib" />
+          <root url="file://$MODULE_DIR$/log" />
+          <root url="file://$MODULE_DIR$/conf" />
           <root url="file://$MODULE_DIR$/.idea" />
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/lib" />
+          <root url="file://$MODULE_DIR$/log" />
+          <root url="file://$MODULE_DIR$/conf" />
           <root url="file://$MODULE_DIR$/.idea" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.6.2, ruby-2.0.0-p451) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="eventmachine (v1.0.3, ruby-2.0.0-p451) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="murmurhash3 (v0.1.4, ruby-2.0.0-p451) [gem]" level="application" />
   </component>
 </module>
 
