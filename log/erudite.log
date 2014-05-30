@@ -1,0 +1,10 @@
+# Logfile created on 2014-05-30 00:15:22 -0700 by logger.rb/41954
+D, [2014-05-30T00:15:22.106726 #8196] DEBUG -- FileSystem: Config: {"logging"=>{"level"=>"DEBUG", "file"=>"../log/erudite.log"}, "data_folders"=>["var/erudite/data/db/"], "backup_folders"=>["var/erudite/backup/"], "client_to_server"=>{"interface"=>"0.0.0.0", "port"=>17767}, "server_to_server"=>{"servers"=>["127.0.0.1"], "s2s_interface"=>"0.0.0.0", "s2s_port"=>17768}}
+I, [2014-05-30T00:15:22.107726 #8196]  INFO -- FileSystem: Filesystem Initialization Complete
+D, [2014-05-30T00:15:22.114732 #8196] DEBUG -- FileSystem: Config: {"logging"=>{"level"=>"DEBUG", "file"=>"../log/erudite.log"}, "data_folders"=>["var/erudite/data/db/"], "backup_folders"=>["var/erudite/backup/"], "client_to_server"=>{"interface"=>"0.0.0.0", "port"=>17767}, "server_to_server"=>{"servers"=>["127.0.0.1"], "s2s_interface"=>"0.0.0.0", "s2s_port"=>17768}}
+I, [2014-05-30T00:15:22.114732 #8196]  INFO -- FileSystem: Filesystem Initialization Complete
+D, [2014-05-30T00:15:22.125740 #8196] DEBUG -- FileSystem: Config: {"logging"=>{"level"=>"DEBUG", "file"=>"../log/erudite.log"}, "data_folders"=>["var/erudite/data/db/"], "backup_folders"=>["var/erudite/backup/"], "client_to_server"=>{"interface"=>"0.0.0.0", "port"=>17767}, "server_to_server"=>{"servers"=>["127.0.0.1"], "s2s_interface"=>"0.0.0.0", "s2s_port"=>17768}}
+I, [2014-05-30T00:15:22.125740 #8196]  INFO -- FileSystem: Filesystem Initialization Complete
+I, [2014-05-30T00:15:23.763834 #8196]  INFO -- FileSystem: Creating TOC file 2060c61a-78b2-4ea9-8d64-0942a1e62187.toc for keyspace 33c4669d2f7c3afd607c740bb38d674c in data folder var/erudite/data/db/
+D, [2014-05-30T00:15:23.769840 #8196] DEBUG -- FileSystem: Config: {"logging"=>{"level"=>"DEBUG", "file"=>"../log/erudite.log"}, "data_folders"=>["var/erudite/data/db/"], "backup_folders"=>["var/erudite/backup/"], "client_to_server"=>{"interface"=>"0.0.0.0", "port"=>17767}, "server_to_server"=>{"servers"=>["127.0.0.1"], "s2s_interface"=>"0.0.0.0", "s2s_port"=>17768}}
+I, [2014-05-30T00:15:23.770839 #8196]  INFO -- FileSystem: Filesystem Initialization Complete

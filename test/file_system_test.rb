@@ -32,6 +32,13 @@ class FileSystemTest < MiniTest::Unit::TestCase
     assert(dirs)
   end
 
+  def test_find_data_folder
+    data_folders = [ "/var/erudite/db/data0","/var/erudite/db/data1", "/var/erudite/db/data2", "/var/erudite/db/data3"]
+    row_hash = "33c4669d2f7c3afd607c740bb38d674c"
+    folder = @filesystem.find_data_folder row_hash, data_folders
+    assert_equal(data_folders[1], folder)
+  end
+
   def teardown
     FileUtils.rmtree("var")
   end

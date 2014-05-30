@@ -10,6 +10,7 @@ GEM
     minitest (4.3.2)
     murmurhash3 (0.1.4)
     rake (0.9.6)
+    rdoc (4.0.0)
 
 PLATFORMS
   x64-mingw32
@@ -21,3 +22,4 @@ DEPENDENCIES
   minitest
   murmurhash3
   rake
+  rdoc
